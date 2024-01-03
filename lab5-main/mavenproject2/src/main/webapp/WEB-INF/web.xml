@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="4.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+    <servlet>
+        <servlet-name>StudentAdd</servlet-name>
+        <servlet-class>sumdu.edu.ua.mavenproject2.StudentAdd</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StudentAdd</servlet-name>
+        <url-pattern>/StudentAdd</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ControllContent</servlet-name>
+        <servlet-class>sumdu.edu.ua.mavenproject2.Controllers.ControllContent</servlet-class> 
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ControllContent</servlet-name>
+        <url-pattern>/ControllContent</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
